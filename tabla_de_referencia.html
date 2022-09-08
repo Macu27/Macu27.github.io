@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla_de_referencia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Metrophobic&display=swap" rel="stylesheet">
+   
+   
+    <title>Tabla de Referencia</title>
+</head>
+<body>
+    <header>
+        <div class="fondo">
+            <div class="blanco_azul_head">
+                <div class="blanco_rojo_head">
+                     <div class="blanco_amarillo_head">
+                     </div>
+                 </div>
+            </div> 
+        </div>
+        <h1>Tabla de <br> Referencia</h1>
+    </header>
+
+<!--Tabla-->
+    <table>
+        <thead>
+            <tr>
+                <th>Metros</th>
+                <th>Mira</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5 mts</td>
+                <td id="rst5">0.0</td>
+            </tr>
+            <tr>
+                <td>10 mts</td>
+                <td id="rst10">0.0</td>
+            </tr>
+            <tr>
+                <td>15 mts</td>
+                <td id="rst15">0.0</td>
+            </tr>
+            <tr>
+                <td>20 mts</td>
+                <td id="rst20">0.0</td>
+            </tr>
+            <tr>
+                <td>25 mts</td>
+                <td id="rst25">0.0</td>
+            </tr>
+            <tr>
+                <td>30 mts</td>
+                <td id="rst30">0.0</td>
+            </tr>
+            <tr>
+                <td>35 mts</td>
+                <td id="rst35">0.0</td>
+            </tr>
+            <tr>
+                <td>40 mts</td>
+                <td id="rst40">0.0</td>
+            </tr>
+            <tr>
+                <td>45 mts</td>
+                <td id="rst45">0.0</td>
+            </tr>
+            <tr>
+                <td>50 mts</td>
+                <td id="rst50">0.0</td>
+            </tr>
+            <tr>
+                <td>55 mts</td>
+                <td id="rst55">0.0</td>
+            </tr>
+            <tr>
+                <td>60 mts</td>
+                <td id="rst60">0.0</td>
+            </tr>
+            <tr>
+                <td>65 mts</td>
+                <td id="rst65">0.0</td>
+            </tr>
+            <tr>
+                <td>70 mts</td>
+                <td id="rst70">0.0</td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="otraDistancia" placeholder="Otra Distancia" name="Otra" type="number" oninput="calcMiraND()">mts</td>
+                <td id="rstND">0.0</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+
+<!--Parrafo-->   
+    <p class="descripcion">No es un calculo exacto,
+        tomar solo como una aproximación. <br> Apartir de 30 mts entran distintos factores en consideracion</p>
+
+<!--Link-->
+    <a href="medidas_de_referencia.html" id="nueva_tabla">
+        <button>
+            <label for="nueva_tabla">Nueva tabla</label>
+            <div class="blanco_azul_boton">
+                <div class="blanco_rojo_boton">
+                    <div class="blanco_amarillo_boton">
+                    </div>
+                </div>
+            </div> 
+        </button>       
+    </a>
+    
+
+    
+
+    <script>
+     
+    
+    
+
+    function calcMira (){   
+        let dato = localStorage.getItem("datosDiez");
+        dato = Number(dato);
+        for (let i=1; i < 15; i++){
+            let dist = i * 5;
+            let resultado = (dist * dato)/ 10;
+            let identificador = "rst" + dist;
+            document.getElementById(identificador ).innerHTML = resultado.toFixed(1);
+        }
+    }
+
+    calcMira()
+
+    function calcMiraND (){
+        let dato = localStorage.getItem("datosDiez");
+        dato = Number(dato);
+        let nuevaDist = document.getElementById("otraDistancia").value;
+        let resultadoND = (nuevaDist * dato) / 10;
+        let rstND = document.getElementById("rstND")
+        rstND.innerHTML=resultadoND.toFixed(1);
+    }
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medidas_de_referencia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora:ital@1&family=Metrophobic&display=swap" rel="stylesheet">
+    
+    <title>Medidas de Referencia</title>
+</head>
+
+<body>
+   
+   <header>  
+        <div class="fondo">       
+            <div class="blanco_azul_head">
+               <div class="blanco_rojo_head">
+                  <div class="blanco_amarillo_head">
+                  </div>
+               </div>
+            </div>
+         </div> 
+      <h1>Medidas de <br> Referencia</h1>
+      <p class="descripcion">Indica la posición de tu mira <br> en las siguientes distancias:</p>
+  </header>
+
+<!--Regla-->
+
+
+   <div class="lineas">
+      <div class="cm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--1-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--2-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--3-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--4-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--5-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--6-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--7-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--8-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--9-->
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm5"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="mm"></div>
+      <div class="cm"></div><!--10-->
+
+
+   </div>
+   <div class="numeros">
+      <div class="nuMed">0.0</div>
+      <div class="nuMed">1.0</div>
+      <div class="nuMed">2.0</div>
+      <div class="nuMed">3.0</div>
+      <div class="nuMed">4.0</div>
+      <div class="nuMed">5.0</div>
+      <div class="nuMed">6.0</div>
+      <div class="nuMed" id="siete">7.0</div>
+      <div class="nuMed">8.0</div>
+      <div class="nuMed">9.0</div>
+      <div class="nuMed">10.0</div>
+
+   </div>
+
+
+
+
+<!--Señaladores-->
+<form action="D:\Macarena\Programacion\Aproximador de Mira\tabla_de_referencia.html" class="continputs" id="formsanaladores">
+   <div class="flecha" id="flechaUno" draggable="true">
+      <div class="punta"></div>
+   </div>
+   <label for="miraUno" id="label10mts">10 mts</label>
+   <input  type="number" class="senalador" id="miraUno" max="10" min="0.1" step="0.1" required value="0.4">
+
+   <div class="flecha" id="flechaDos">
+      <div class="punta"></div>
+   </div>
+   <label for="miraDos" id="label30mts">30 mts</label>
+   <input  type="number" class="senalador" id="miraDos" max="10" min="0.1" step="0.1" required value="1.2">
+   
+</form>
+
+
+
+<!--Link-->
+
+   <button type="submit" form="formsanaladores" onclick="pasarvalor" id="guardar"> 
+        <label for="tabla_guardada">Tabla de Referencia</label>
+        <div class="blanco_azul_boton">
+            <div class="blanco_rojo_boton">
+                <div class="blanco_amarillo_boton">
+                </div>
+            </div>
+        </div> 
+    </button>    
+
+ 
+<script >
+let miraUno = document.getElementById ("miraUno");
+let flechaUno = document.getElementById ("flechaUno");
+let labelUno = document.getElementById ("label10mts");
+ 
+miraUno.oninput = function(){
+    miraUno.style.gridRowStart = 10 * this.value + 1 ;
+    flechaUno.style.gridRowStart = 10 * this.value + 1 ;
+    labelUno.style.gridRowStart = 10 * this.value + 1 ;
+}
+
+
+
+let miraDos = document.getElementById ("miraDos");
+let flechaDos = document.getElementById ("flechaDos");
+let labelDos = document.getElementById ("label30mts");
+
+miraDos.oninput = function(){
+    miraDos.style.gridRowStart = 10 * this.value + 1 ;
+    flechaDos.style.gridRowStart = 10 * this.value + 1 ;
+    labelDos.style.gridRowStart = 10 * this.value + 1 ;
+}
+
+
+function guardarDatos (){
+localStorage.setItem("datosDiez", miraUno.value);
+}
+
+miraUno.addEventListener ("input", guardarDatos);
+
+</script>
+<script  src="funciones.js"></script>  
+</body>
+</html>
+

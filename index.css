@@ -1,0 +1,125 @@
+
+body{
+    margin: 0;
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 1fr;
+}
+
+header{
+    grid-column: 1 /span 2;
+    align-self: flex-end;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+ 
+.blanco_azul_head{
+    background-color: #07B5FF;
+    border: 4px solid black;
+    height: 680px;
+    width: 680px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px ;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -2px 10px 5px rgb(124, 124, 124) 
+}
+
+.blanco_rojo_head{
+    background-color: red;
+    border: 4px solid black;
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blanco_amarillo_head{
+    background-color: yellow;
+    border: 4px solid black;
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 4px white, 0px 0px 4px white, 0px 2px 5px rgba(0, 0, 0, 50);
+    position: relative;
+    top: 35px;
+}
+
+nav{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+button{
+    border: none;
+    background-color: white;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+button:hover {
+    transform: scale(120%);
+    box-shadow: 5px 7px 10px 2px rgb(124, 124, 124) 
+}
+
+a{
+    text-decoration: none;
+}
+
+.blanco_azul_boton{
+    background-color: #07B5FF;
+    border: 3px solid black;
+    height: 72px;
+    width: 72px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blanco_rojo_boton{
+    background-color: red;
+    border: 3px solid black;
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blanco_amarillo_boton{
+background-color: yellow;
+border: 3px solid black;
+height: 50%;
+width: 50%;
+border-radius: 100%
+}
+
+label{
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+#tablaGuardada{
+    opacity: 0.5;
+}

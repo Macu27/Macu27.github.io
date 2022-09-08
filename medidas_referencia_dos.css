@@ -1,0 +1,120 @@
+*{ box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 75px 75px 1fr 1fr 1fr;
+    grid-template-rows: 118px 118px 114px 1fr;
+}
+
+header{
+    height: 350px; 
+    
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+.fondo{
+    height: 350px;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/4;
+
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    opacity: 0.5;
+} 
+.blanco_azul_head{
+    background-color: #07B5FF;
+    border: 4px solid black;
+    height: 700px;
+    width: 700px;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+    flex-shrink: 0;
+    position: relative;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.blanco_rojo_head{
+    background-color: red;
+    border: 2px solid black;
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blanco_amarillo_head{
+    background-color: yellow;
+    border: 2px solid black;
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 4px white, 0px 0px 4px white, 0px 2px 5px rgba(0, 0, 0, 50);
+    
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 2;
+}
+.descripcion{
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 24px;
+    text-align: center;
+
+    grid-column: 1/2;
+    grid-row: 2/2;
+    z-index: 2;
+
+    margin-top: 0%;
+
+
+    
+}
+
+/*Regla*/
+.cntRegla{
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+    border: 1px solid blue;
+}
+
+
+.cntSlider{
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+    border: 1px solid green;
+}
+
+.link{
+    position: static;
+
+    border: 1px solid rebeccapurple;
+}
